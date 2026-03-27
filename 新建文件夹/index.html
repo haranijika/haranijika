@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 | Portfolio</title>
+    <style>
+        body { margin: 0; background: #ffffff; font-family: sans-serif; }
+        .header { padding: 60px 20px; text-align: left; max-width: 1200px; margin: 0 auto; }
+        h1 { font-size: 24px; letter-spacing: 1px; text-transform: uppercase; }
+        
+        /* 网格布局：每行 3 个作品，手机端自动变 1 个 */
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 15px; 
+            padding: 15px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .work-item { position: relative; overflow: hidden; background: #f0f0f0; aspect-ratio: 4 / 3; }
+        .work-item img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; /* 确保图片铺满格子 */
+            transition: opacity 0.3s;
+        }
+        .work-item:hover img { opacity: 0.8; }
+
+        .work-info { padding: 10px 0; font-size: 14px; color: #666; }
+        
+        footer { padding: 100px 20px; text-align: center; color: #999; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>[HaraNijika] / Works</h1>
+    </div>
+
+    <div class="gallery">
+        <div class="work-item">
+            <img src="images/my-work-01.jpg" alt="stamp01">
+            <div class="work-info">项目名称 01</div>
+        </div>
+
+        <div class="work-item">
+            <img src="images/my-work-02.jpg" alt="stamp02">
+            <div class="work-info">项目名称 02</div>
+        </div>
+
+        <div class="work-item">
+            <img src="images/my-work-chloe.jpg" alt="MissChloe">
+            <div class="work-info">项目名称 03</div>
+        </div>
+        </div>
+
+    <footer>
+        &copy; 2026 [HaraNijika]. Built with GitHub Pages.
+    </footer>
+
+</body>
+</html>
